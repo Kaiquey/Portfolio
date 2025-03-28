@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Bytesized&family=Lato:wght@100&display=swap');
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.795);
+  color: #fff;
+  padding: 100px 20px;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  background: linear-gradient(to left, rgba(0,0,0,0.8), rgba(2,33,73,0.8));
+  height: 90px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+h1 {
+  text-align: center;
+}
+/* Classes Container e FlexBox*/
+.container-project{
+  margin: 0 auto;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+/* Header */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.container>a{
+  margin: 0 20vw;
+  margin-left: 0;
+}
+.header-navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.header-navbar ul {
+  height: 100%;
+  justify-content: space-between;
+}
+.header-navbar ul li {
+  margin: 0 10px;
+  text-transform: uppercase;
+  list-style: none;
+}
+.header-navbar ul li a:hover {
+  color: gold;
+  text-decoration: underline;
+}
+.header-social-media{
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.header-social-media ul i {
+  margin: 0 16px;
+  text-transform: uppercase;
+  font-size: 30px;
+  cursor: pointer;
+}
+.header-social-media ul i:hover {
+  color: #ff00ff;
+  transform: scale(1.1);
+}
+/* Footer */
+footer{
+  margin: 0;
+  left: 0;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  height: 6vw;
+  position: absolute;
+  border: 1px solid #fff;
+}
+/* gallery */
+.gallery-card {
+  width: 30%;
+  height: 400px;
+  margin-top: 15px;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-image {
+  background-size: 100%;
+  background-position: center;
+  transition: 0.6s;
+  background-color: #4869e1;
+  background-blend-mode: multiply;
+}
+.gallery-image:hover {
+  background-size: 120%;
+  background-color: #fff;
+  background-blend-mode: multiply;
+}
+/* Objetos */
+#images-about {
+  width: 40%;
+}
+#images-about img {
+  width: 90%;
+}
+#images-about img {
+  float: left;
+  margin-right: 10px;
+  margin: 0% 0% 0% 2%;
+  border-radius: 50%;
+  box-shadow: 0px 4px 12px #281c41;
+  transition: 0.8s;
+}
+#images-about img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 14px #34068a;
+}
+#img-1 {
+  background-image: url(../images/img-1.jpg);
+}
+#img-2 {
+  background-image: url(../images/img-2.jpg);
+}
+#img-3 {
+  background-image: url(../images/img-3.jpg);
+}
+/* Sobre mim */
+#sobre {
+  width: 50%;
+}
+#sobre>p{
+	font-size: 1.2rem;
+	line-height: 1.8;
+	text-align: justify;
+	margin-top: 20px;
+	color: #e0e0e0;
+	padding: 15px 20px;
+	background-color: #1a1a1a;
+	border-left: 15px solid #4869e1;
+	border-radius: 8px;
+}
+#sobre>p:hover{
+	transform: scale(1.05);
+	box-shadow: 0px 6px 14px rgba(0, 0, 0.7);
+  font-style: italic;
+  border: 7px solid rgba(255, 255, 255, 0.548);
+  border-left: 15px solid rgba(72, 105, 225, 0.8);
+  box-shadow: 0px 4px 17px rgb(0, 0, 241);
+	transition: transform 0.6s ease, box-shadow 0.3s ease;
+}
+.bar{
+  display: none;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+/* Screens */
+@keyframes deslize{
+  from{
+    margin-left: -100vw;
+  }
+  top{
+    margin-left: -10vw;
+  }
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .bar{
+    display: block;
+    background-color: transparent;
+  }
+  .header-navbar{
+    width: 35vw;
+    margin-left: -100vw;
+    position: fixed;
+    flex-direction: column;
+    z-index: 2;
+    padding: 1em;
+    animation-duration: 0.9s;
+    top: 0;
+    height: 100%;
+  }
+}

@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Bytesized&family=Lato:wght@100&display=swap');
 
 * {
@@ -5,9 +6,15 @@
   margin: 0;
   padding: 0;
 }
+h1{
+  color: rgba(56, 0, 56, 0.856);
+}
 body {
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.795);
+  background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdml6dWlpY2pnaHN6aTJ0YWJuaWltOW1qbWZ0djdndzBzZTlmajloZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3og0IV7MOCfnm85iRa/giphy.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: 3s infinite alternate;
   color: #fff;
   padding: 100px 20px;
 }
@@ -174,6 +181,9 @@ footer{
 /* Sobre mim */
 #sobre {
   width: 50%;
+}
+#sobre h1{
+  color: white;
 }
 #sobre>p{
 	font-size: 1.2rem;
